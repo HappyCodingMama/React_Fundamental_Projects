@@ -1,10 +1,25 @@
 import React, { useState } from "react";
 import people from "./data";
-import { FaChevronLeft, FachevronRight, FaQuoteRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 
-const review = () => {
+const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
+
+  const nextPerson = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return newIndex;
+    });
+  };
+
+  const prevPerson = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return newIndex;
+    });
+  };
+
   return (
     <article className="review">
       <div className="img-container">
@@ -17,12 +32,16 @@ const review = () => {
       <p className="job">{job}</p>
       <p className="info">{text}</p>
       <div className="button-container">
-        <button>
+        <button className="prev-btn" onClick={prevPerson}>
           <FaChevronLeft />
         </button>
+        <button className="next-btn" onClick={nextPerson}>
+          <FaChevronRight />
+        </button>
+        <button className="random-btn">suprise me</button>
       </div>
     </article>
   );
 };
 
-export default review;
+export default Review;
