@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import data from './data';
-import './App.css';
+import React, { useState } from "react";
+import data from "./data";
+import "./App.css";
+import SingleQuestion from "./Question";
 
 function App() {
-  return <h2>accordion prohect setup</h2>;
+  return <h2>accordion project setup</h2>;
 }
 
 export default App;
