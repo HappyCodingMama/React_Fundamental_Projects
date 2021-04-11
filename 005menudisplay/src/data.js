@@ -1,7 +1,7 @@
 const menu = [
   {
     id: 1,
-    tuitle: "buttermilk pancakes",
+    title: "buttermilk pancakes",
     category: "breakfast",
     price: 15.99,
     img:
@@ -11,7 +11,7 @@ const menu = [
   },
   {
     id: 2,
-    tuitle: "buttermilk pancakes",
+    title: "buttermilk pancakes",
     category: "breakfast",
     price: 15.99,
     img:
@@ -21,7 +21,7 @@ const menu = [
   },
   {
     id: 3,
-    tuitle: "buttermilk pancakes",
+    title: "buttermilk pancakes",
     category: "breakfast",
     price: 15.99,
     img:
