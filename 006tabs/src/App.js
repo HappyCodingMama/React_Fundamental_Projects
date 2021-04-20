@@ -10,7 +10,13 @@ function App() {
   const fetchJobs = async () => {
     const response = await fetch(url);
     const newJobs = await response.json();
+    setJobs(newJobs);
+    setLoading(false);
   };
+
+  useEffect(() => {
+    fetchJobs();
+  }, []);
 
   return <h2>Tabs Project Setup</h2>;
 }
