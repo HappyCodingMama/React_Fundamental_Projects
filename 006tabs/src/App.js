@@ -27,6 +27,7 @@ function App() {
     );
   }
 
+  const { company, dates, duties, title } = jobs[value];
   return <h2>Tabs Project Setup</h2>;
 }
 
