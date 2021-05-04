@@ -18,6 +18,13 @@ function App() {
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;
 
+          let position = "nexSlide";
+          if (personIndex === index) {
+            position = "activeSlide";
+          }
+          if (personIndex === index - 1) {
+            position = "lastIndex";
+          }
           return (
             <article key={id}>
               <img src={image} alt={name} className="person-img" />
