@@ -15,6 +15,7 @@ function App() {
       <h3>text generator</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs</label>
+        <input type="number" name="amount" id="amount" />
       </form>
     </section>
   );
