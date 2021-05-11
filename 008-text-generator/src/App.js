@@ -15,7 +15,16 @@ function App() {
       <h3>text generator</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs</label>
-        <input type="number" name="amount" id="amount" />
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          value={count}
+          onChange={(e) => setCount(e.target.value)}
+        />
+        <button type="submit" className="btn">
+          generate
+        </button>
       </form>
     </section>
   );
