@@ -5,8 +5,26 @@ import Values from "values.js";
 
 const App = () => {
   const [color, setColor] = useState("");
+  const [error, setError] = useState(false);
+  const [list, setList] = useState([]);
 
-  return <h2>color generator setup</h2>;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+    <>
+      <section className="container">
+        <h3>color generator</h3>
+        <form onSubmit={handleSubmit}>
+          <input type="text" value={color} />
+        </form>
+      </section>
+      <section className="colors">
+        <h4>list goes here</h4>
+      </section>
+    </>
+  );
 };
 
 export default App;
