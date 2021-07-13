@@ -19,4 +19,10 @@ export const links = [
     text: "home",
     icon: <FaHome />,
   },
+  {
+    id: 2,
+    url: "/team",
+    text: "team",
+    icon: <FaUserFriends />,
+  },
 ];
