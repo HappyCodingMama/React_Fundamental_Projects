@@ -31,4 +31,10 @@ export const links = [
     text: "project",
     icon: <FaFolderOpen />,
   },
+  {
+    id: 4,
+    url: "/calendar",
+    text: "calendar",
+    icon: <FaCalendarAlt />,
+  },
 ];
