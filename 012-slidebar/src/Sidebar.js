@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { social, links } from "./data";
 
 const Sidebar = () => {
-  return <div></div>;
+  return <div>sidebar</div>;
 };
 
 export default Sidebar;
