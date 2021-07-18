@@ -44,3 +44,11 @@ export const links = [
     icon: <FaWpforms />,
   },
 ];
+
+export const social = [
+  {
+    id: 1,
+    url: "https//www.twitter.com",
+    icon: <FaFacebook />,
+  },
+];
