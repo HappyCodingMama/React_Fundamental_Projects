@@ -56,4 +56,9 @@ export const social = [
     url: "https//www.twitter.com",
     icon: <FaTwitter />,
   },
+  {
+    id: 3,
+    url: "https//www.twitter.com",
+    icon: <FaLinkedin />,
+  },
 ];
