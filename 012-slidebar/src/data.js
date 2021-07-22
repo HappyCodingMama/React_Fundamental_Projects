@@ -66,4 +66,9 @@ export const social = [
     url: "https//www.twitter.com",
     icon: <FaBehance />,
   },
+  {
+    id: 5,
+    url: "https//www.twitter.com",
+    icon: <FaSketch />,
+  },
 ];
