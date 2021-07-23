@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Fabehance,
+  FaBehance,
   FaFacebook,
   FaLinkedin,
   FaTwitter,
