@@ -6,7 +6,9 @@ import { social, links } from "./data";
 const Sidebar = () => {
   return (
     <aside className={`sidebar show-sidebar`}>
-      <div className="sidebar-header"></div>
+      <div className="sidebar-header">
+        <img src={logo} className="logo" alt="coding addict" />
+      </div>
     </aside>
   );
 };
