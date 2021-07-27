@@ -11,6 +11,12 @@ const Sidebar = () => {
         <button className="close-btn">
           <FaTimes />
         </button>
+        <ul className="links">
+          {links.map((link) => {
+            const { id, url, text, icon } = link;
+            return <li key={id}></li>;
+          })}
+        </ul>
       </div>
     </aside>
   );
