@@ -24,6 +24,7 @@ const Sidebar = () => {
             );
           })}
         </ul>
+        <ul className="social-icons">{social.map(() => {})}</ul>
       </div>
     </aside>
   );
