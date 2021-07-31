@@ -4,7 +4,13 @@ import Sidebar from "./Sidebar";
 import home from "./Home";
 
 const App = () => {
-  return <div>modal-sidebar project setup</div>;
+  return (
+    <>
+      <Home />
+      <Modal />
+      <Sidebar />
+    </>
+  );
 };
 
 export default App;
