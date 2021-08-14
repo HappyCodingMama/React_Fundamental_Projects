@@ -20,7 +20,18 @@ const AppProvider = ({ children }) => {
   };
 
   return;
-  <AppContext.Provider value="hello">{children}</AppContext.Provider>;
+  <AppContext.Provider
+    value={{
+      isModalOpen,
+      isSidebarOpen,
+      openModal,
+      openSidebar,
+      closeModal,
+      closeSidebar,
+    }}
+  >
+    {children}
+  </AppContext.Provider>;
 };
 
 export const useGlobalContext = () => {
