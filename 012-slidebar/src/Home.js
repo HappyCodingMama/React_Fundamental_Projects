@@ -6,7 +6,7 @@ const Home = () => {
   const { openSidebar, openModal } = useGlobalContext();
   return (
     <main>
-      <button className="sidebar-toggle">
+      <button className="sidebar-toggle" onClick={openSidebar}>
         <FaBars />
       </button>
       <button className="btn">show modal</button>
