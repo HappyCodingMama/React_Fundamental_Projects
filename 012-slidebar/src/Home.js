@@ -9,7 +9,9 @@ const Home = () => {
       <button className="sidebar-toggle" onClick={openSidebar}>
         <FaBars />
       </button>
-      <button className="btn">show modal</button>
+      <button className="btn" onClick={openModal}>
+        show modal
+      </button>
     </main>
   );
 };
