@@ -7,10 +7,10 @@ import { useGlobalContext } from "./context";
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
-    <aside className={`sidebar`}>
+    <aside className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}>
       <div className="sidebar-header">
         <img src={logo} className="logo" alt="coding addict" />
-        <button className="close-btn">
+        <button className="close-btn" onClick={closeSidebar}>
           <FaTimes />
         </button>
         <ul className="links">
