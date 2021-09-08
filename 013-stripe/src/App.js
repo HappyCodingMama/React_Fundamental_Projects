@@ -7,7 +7,11 @@ import Submenu from "./Submenu";
 function App() {
   return (
     <div>
-      <h2>stripe menus project setup</h2>
+      <>
+        <Navbar />
+        <Sidebar />
+        <Hero />
+      </>
     </div>
   );
 }
