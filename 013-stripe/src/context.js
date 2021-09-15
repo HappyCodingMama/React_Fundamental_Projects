@@ -10,5 +10,8 @@ const AppProvider = ({ children }) => {
   const openSidebar = () => {
     setIsSidebarOpen(true);
   };
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
   return <AppContext.Provider>{children}</AppContext.Provider>;
 };
