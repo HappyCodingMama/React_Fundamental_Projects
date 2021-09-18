@@ -20,7 +20,18 @@ const AppProvider = ({ children }) => {
     setIsModalOpen(false);
   };
 
-  return <AppContext.Provider value={
-    
-  }>{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider
+      value={{
+        isModalOpen,
+        isSidebarOpen,
+        openModal,
+        openSidebar,
+        closeModal,
+        closeSidebar,
+      }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
 };
