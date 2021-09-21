@@ -25,9 +25,9 @@ const AppProvider = ({ children }) => {
       value={{
         isModalOpen,
         isSidebarOpen,
-        openModal,
+        openSubmenu,
         openSidebar,
-        closeModal,
+        closeSubmenu,
         closeSidebar,
       }}
     >
